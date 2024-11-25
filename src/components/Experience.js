@@ -47,7 +47,7 @@ const Experience = () => {
           </div>
 
           <div className="col-md-6">
-            <div className="pl-55">
+            <div className="">
               <div className="row">
                 <div className="col-6 mb-2">
                   <div className="counter-item">

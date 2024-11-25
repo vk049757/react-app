@@ -1,32 +1,112 @@
-@import "~font-awesome/css/font-awesome.min.css";
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+  position: relative;
+}
 
-/* Custom CSS for Timeline */
-.timeline-with-icons {
-    border-left: 1px solid hsl(0, 0%, 90%);
-    position: relative;
-    list-style: none;
+/* The vertical line of the timeline */
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #939597;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container for each timeline item */
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Circle for each timeline item */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #939597;
+  border: 5px solid #f5df4d;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Position items on the left */
+.left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Position items on the right */
+.right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Arrows for the left items */
+.left::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Arrows for the right items */
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for the right items */
+.right::after {
+  left: -12px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .main-timeline::after {
+    left: 31px;
   }
-  
-  .timeline-with-icons .timeline-item {
-    position: relative;
+
+  .timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  
-  .timeline-with-icons .timeline-item:after {
-    position: absolute;
-    display: block;
-    top: 0;
+
+  .timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
   }
-  
-  .timeline-with-icons .timeline-icon {
-    position: absolute;
-    left: -48px;
-    background-color: hsl(217, 88.2%, 90%);
-    color: hsl(217, 88.8%, 35.1%);
-    border-radius: 50%;
-    height: 31px;
-    width: 31px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  .left::after,
+  .right::after {
+    left: 18px;
   }
-  
+
+  .left::before {
+    right: auto;
+  }
+
+  .right {
+    left: 0%;
+  }
+}

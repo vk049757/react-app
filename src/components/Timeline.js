@@ -1,80 +1,97 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'font-awesome/css/font-awesome.min.css'; // Import Font Awesome CSS
 import './timeline.css'; // Import custom CSS for styles
 
 const Timeline = () => {
     return (
-        <section className="timeline-section py-5 bg-light mt-5">
-            <div className="container">
-
-                <div className='row'>
-                    <div className="col-12 mb-5">
-                        <h2 className="display-4 text-primary">Project Timeline</h2>
-                        <p className="lead text-muted">
-                            Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
-                        </p>
-                    </div>
-                </div>
-                <ul className="timeline-with-icons">
+        <section style={{ backgroundColor: '#F0F2F5' }}>
+            <div className="container py-5">
+                <div className="main-timeline">
                     {/* Timeline Item 1 */}
-                    <li className="timeline-item mb-5">
-                        <span className="timeline-icon">
-                           <img src="/images/dot.png" alt="JavaScript" className="img-fluid" style={{ height: '20px' }} />
-                        </span>
-                        <h5 className="fw-bold">Step 1</h5>
-                       
-                        <p className="text-muted">
-                        Nulla ac tellus convallis, pulvinar nulla ac, fermentum diam. Sed
-                            et urna sit amet massa dapibus tristique non finibus ligula. Nam
-                            pharetra libero nibh, id feugiat tortor rhoncus vitae. Ut suscipit
-                            vulputate mattis.
-                        </p>
-                    </li>
+                    <div className="timeline left">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2017</h3>
+                                <p className="mb-0">
+                                    Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                                    vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                    habeo iusto primis ea eam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
                     {/* Timeline Item 2 */}
-                    <li className="timeline-item mb-5">
-                        <span className="timeline-icon">
-                            <img src="/images/dot.png" alt="JavaScript" className="img-fluid" style={{ height: '20px' }} />
-                        </span>
-                        <h5 className="fw-bold">Step 2</h5>
-                        <p className="text-muted">
-                        Nulla ac tellus convallis, pulvinar nulla ac, fermentum diam. Sed
-                            et urna sit amet massa dapibus tristique non finibus ligula. Nam
-                            pharetra libero nibh, id feugiat tortor rhoncus vitae. Ut suscipit
-                            vulputate mattis.
-                        </p>
-                    </li>
+                    <div className="timeline right">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2016</h3>
+                                <p className="mb-0">
+                                    Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                                    vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                    habeo iusto primis ea eam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
                     {/* Timeline Item 3 */}
-                    <li className="timeline-item mb-5">
-                        <span className="timeline-icon">
-                            <img src="/images/dot.png" alt="JavaScript" className="img-fluid" style={{ height: '20px' }} />
-                        </span>
-                        <h5 className="fw-bold">Step 3</h5>
-                        <p className="text-muted">
-                        Nulla ac tellus convallis, pulvinar nulla ac, fermentum diam. Sed
-                            et urna sit amet massa dapibus tristique non finibus ligula. Nam
-                            pharetra libero nibh, id feugiat tortor rhoncus vitae. Ut suscipit
-                            vulputate mattis.
-                        </p>
-                    </li>
+                    <div className="timeline left">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2015</h3>
+                                <p className="mb-0">
+                                    Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                                    vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                    habeo iusto primis ea eam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
                     {/* Timeline Item 4 */}
-                    <li className="timeline-item mb-5">
-                        <span className="timeline-icon">
-                            <img src="/images/dot.png" alt="JavaScript" className="img-fluid" style={{ height: '20px' }} />
-                        </span>
-                        <h5 className="fw-bold">Step 4</h5>
-                        <p className="text-muted">
-                            Nulla ac tellus convallis, pulvinar nulla ac, fermentum diam. Sed
-                            et urna sit amet massa dapibus tristique non finibus ligula. Nam
-                            pharetra libero nibh, id feugiat tortor rhoncus vitae. Ut suscipit
-                            vulputate mattis.
-                        </p>
-                    </li>
-                </ul>
+                    <div className="timeline right">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2012</h3>
+                                <p className="mb-0">
+                                    Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                                    vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                    habeo iusto primis ea eam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Timeline Item 5 */}
+                    <div className="timeline left">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2011</h3>
+                                <p className="mb-0">
+                                    Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                                    vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                    habeo iusto primis ea eam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Timeline Item 6 */}
+                    <div className="timeline right">
+                        <div className="card">
+                            <div className="card-body p-4">
+                                <h3>2007</h3>
+                                <p className="mb-0">
+                                    Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
+                                    vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,
+                                    habeo iusto primis ea eam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
