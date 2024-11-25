@@ -8,6 +8,7 @@ import Portfolio from '../components/Portfolio';
 import DesignSolution from '../components/DesignSolution';
 import Experience from '../components/Experience';
 import Timeline from '../components/Timeline';
+import InquiryForm from '../components/InquiryForm';
 import Footer from '../components/Footer';
 
 const HomePage = () => {
@@ -21,6 +22,7 @@ const HomePage = () => {
       <DesignSolution />
       <Experience />
       <Timeline />
+      <InquiryForm />
       <Footer />
     </div>
   );
