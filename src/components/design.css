@@ -1,0 +1,25 @@
+.DesignTitle{
+    font-size: 25px;
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+.innerDesignDiv{
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.DesignDesc{
+    font-size: 15px;
+    color: #9fa0a1;
+}
+
+.innerDesignDiv {
+    /* Initial state for the div (no transition yet) */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.innerDesignDiv:hover {
+    background: #0d6efd26;
+    box-shadow: 4px 4px 0 0 black;
+}

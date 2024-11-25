@@ -1,0 +1,38 @@
+/* portfolio.css */
+
+/* Container for each portfolio item */
+.portfolio-item {
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust the height of the container */
+    position: relative;
+    overflow: hidden; /* Ensures the zoomed image doesn't overflow the container */
+    transition: background-size 5s ease-in-out; /* Smooth transition for the background zoom */
+    border-radius: 34px;
+    border: 5px solid #72c1e8;
+}
+
+/* Apply zoom effect to the background image only on hover */
+.portfolio-item:hover {
+    background-size: 110%; /* Zoom in the background image to 110% */
+}
+
+/* Text inside the portfolio item */
+.portfolio-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+
+
+.projectTitle{
+    font-size: 40px;
+}
+
+.projectDesc{
+    font-size: 17px;
+}
